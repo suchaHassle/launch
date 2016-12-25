@@ -15,9 +15,9 @@ h3 {
 
 body {
   background-color: #002b36;
+  color: #657b83;
   font-family: "Inconsolata", monospace;
   font-size: 15px;
-  color: #657b83;
 }
 
 h3 {
@@ -29,8 +29,8 @@ h3 {
 a, a:visited {
   display: block;
   padding-top: 2px;
-  font-weight: bold;
   color: #2aa198;
+  font-weight: bold;
   text-decoration: none;
 }
 a:hover { color: #dc322f; }
@@ -39,14 +39,14 @@ a:hover { color: #dc322f; }
   COLOURS
 ---------------------------------------------------------------------- */
 
-.blue {	color: #268bd2; }
-.cyan { color: #2aa198; }
-.green { color: #859900; }
-.magenta { color: #d33682; }
-.orange { color: #cb4b16; }
-.red { color: #dc322f; }
-.violet { color: #6c71c4; }
-.yellow { color: #b58900; }
+.blue     {	color: #268bd2; }
+.cyan     { color: #2aa198; }
+.green    { color: #859900; }
+.magenta  { color: #d33682; }
+.orange   { color: #cb4b16; }
+.red      { color: #dc322f; }
+.violet   { color: #6c71c4; }
+.yellow   { color: #b58900; }
 
 /* -------------------------------------------------------------------
   LAYOUT
@@ -57,20 +57,20 @@ a:hover { color: #dc322f; }
   top: 35%;
   left: 0;
   right: 0;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
   width: 700px;
   height: auto;
 }
 
 #searchbox {
-  padding: 8px;
   margin: 4px;
+  padding: 8px;
   background-color: #073642;
   border: 5px solid #073642;
   -webkit-box-shadow: 1px 1px 10px 0px #000;
-  -moz-box-shadow: 1px 1px 10px 0px #000;
-  box-shadow: 1px 1px 10px 0px #000;
+     -moz-box-shadow: 1px 1px 10px 0px #000;
+          box-shadow: 1px 1px 10px 0px #000;
 }
 
 #links {
@@ -82,13 +82,13 @@ a:hover { color: #dc322f; }
 .box {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
-  padding: 8px;
   margin: 4px;
+  padding: 8px;
   background-color: #073642;
   border: 5px solid #073642;
   -webkit-box-shadow: 1px 1px 10px 0px #000;
-  -moz-box-shadow: 1px 1px 10px 0px #000;
-  box-shadow: 1px 1px 10px 0px #000;
+     -moz-box-shadow: 1px 1px 10px 0px #000;
+          box-shadow: 1px 1px 10px 0px #000;
 }
 
 /* -------------------------------------------------------------------
@@ -102,9 +102,9 @@ form {
 input 	{
   display: inline;
   width: 64%;
-  font-size: 1em;
-  font-weight: bold;
-  color: #b58900;
   background: none;
   border: none;
+  color: #b58900;
+  font-size: 1em;
+  font-weight: bold;
 }
