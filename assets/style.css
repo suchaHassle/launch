@@ -15,7 +15,7 @@ h3 {
 
 body {
   background-color: #002b36;
-	font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 15px;
   color: #657b83;
 }
@@ -27,8 +27,8 @@ h3 {
 }
 
 a, a:visited {
-	display: block;
-	padding-top: 2px;
+  display: block;
+  padding-top: 2px;
   font-weight: bold;
   color: #2aa198;
   text-decoration: none;
@@ -53,7 +53,7 @@ a:hover { color: #dc322f; }
 ---------------------------------------------------------------------- */
 
 #container {
-	position: absolute;
+  position: absolute;
   top: 35%;
   left: 0;
   right: 0;
@@ -67,16 +67,16 @@ a:hover { color: #dc322f; }
   padding: 8px;
   margin: 4px;
   background-color: #073642;
-	border: 5px solid #073642;
-	-webkit-box-shadow: 1px 1px 10px 0px #000;
-	-moz-box-shadow: 1px 1px 10px 0px #000;
-	box-shadow: 1px 1px 10px 0px #000;
+  border: 5px solid #073642;
+  -webkit-box-shadow: 1px 1px 10px 0px #000;
+  -moz-box-shadow: 1px 1px 10px 0px #000;
+  box-shadow: 1px 1px 10px 0px #000;
 }
 
 #links {
-	display: -moz-box;
-	display: -webkit-box;
-	width: 100%;
+  display: -moz-box;
+  display: -webkit-box;
+  width: 100%;
 }
 
 .box {
@@ -84,11 +84,11 @@ a:hover { color: #dc322f; }
   -moz-box-flex: 1;
   padding: 8px;
   margin: 4px;
-	background-color: #073642;
-	border: 5px solid #073642;
-	-webkit-box-shadow: 1px 1px 10px 0px #000;
-	-moz-box-shadow: 1px 1px 10px 0px #000;
-	box-shadow: 1px 1px 10px 0px #000;
+  background-color: #073642;
+  border: 5px solid #073642;
+  -webkit-box-shadow: 1px 1px 10px 0px #000;
+  -moz-box-shadow: 1px 1px 10px 0px #000;
+  box-shadow: 1px 1px 10px 0px #000;
 }
 
 /* -------------------------------------------------------------------
@@ -96,15 +96,15 @@ a:hover { color: #dc322f; }
 ---------------------------------------------------------------------- */
 
 form {
-	display: inline;
+  display: inline;
 }
 
 input 	{
-	display: inline;
+  display: inline;
   width: 64%;
-	font-size: 1em;
+  font-size: 1em;
   font-weight: bold;
   color: #b58900;
   background: none;
-	border: none;
+  border: none;
 }
