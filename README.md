@@ -14,7 +14,7 @@ From [/r/startpages](https://www.reddit.com/r/startpages):
 - Quick access to favourite links
 - Supports commands (see below for more details)
 
-Note: This startpage has only been tested on Firefox. However, any modern browser should be able to render it within intention.
+*Note: This startpage has only been tested on Firefox. However, any modern browser should be able to render it within intention.*
 
 ## Screenshot
 
