@@ -45,10 +45,12 @@ function parseCom(com) {
   if (handy.test(com)) {
     nav("http://www."+com+".com/");
   }
+
   // handle "drive" command
   else if (/^drive$/i.test(com)) {
     nav("http://drive.google.com");
   }
+
   // handle "reddit" command
   else if (com.startsWith("reddit")==true) {
     // if "reddit" command is matched, open reddit
@@ -85,41 +87,64 @@ function parseCom(com) {
           nav("https://www.reddit.com/");
           break;
         }
-      }
-      // if anything else, search for it
-      else if (urlPattern.test(com)){
-        nav(com);
-      }
-      // if all else fails, search for it
-      else {
-        search();
-      }
     }
-    // handle "twt"" command
-    else if (com.startsWith("twt")==true) {
-      // if "twt" command is matched, open twitter
-      if (/^twt$/i.test(com)) {
-        nav("https://www.twitter.com/");
-      }
-      // if the user command is matched
-      else if (/^twt -u .@?[A-Za-z0-9_]{1,15}$/i.test(com)) {
-        var targs = com.split(" ");
-        nav("https://www.twitter.com/" + targs.pop());
-      }
-      // if search command is matched
-      else if (/^twt -s .{1,140}$/i.test(com)) {
-        var query = com.replace(/^twt -s /i, "");
-        nav("https://www.twitter.com/search?q=" + encodeURIComponent(query));
-      }
-      // if anything else, search for it
-      else if (urlPattern.test(com)){
-        nav(com);
-      }
-      // if all else fails, search for it
-      else {
-        search();
-      }
+    // if anything else, search for it
+    else if (urlPattern.test(com)){
+      nav(com);
     }
+    // if all else fails, search for it
+    else {
+      search();
+    }
+  }
+
+  // handle "twt"" command
+  else if (com.startsWith("twt")==true) {
+    // if "twt" command is matched, open twitter
+    if (/^twt$/i.test(com)) {
+      nav("https://www.twitter.com/");
+    }
+    // if the user command is matched
+    else if (/^twt -u .@?[A-Za-z0-9_]{1,15}$/i.test(com)) {
+      var targs = com.split(" ");
+      nav("https://www.twitter.com/" + targs.pop());
+    }
+    // if search command is matched
+    else if (/^twt -s .{1,140}$/i.test(com)) {
+      var query = com.replace(/^twt -s /i, "");
+      nav("https://www.twitter.com/search?q=" + encodeURIComponent(query));
+    }
+    // if anything else, search for it
+    else if (urlPattern.test(com)){
+      nav(com);
+    }
+    // if all else fails, search for it
+    else {
+      search();
+    }
+  }
+
+  // handle "youtube" commands
+  else if (com.startsWith("youtube")==true) {
+    // if "youtube" command is matched, open youtube
+    if (/^youtube$/i.test(com)) {
+      nav("https://www.youtube.com/feed/subscriptions");
+    }
+    // if search command is matched
+    else if (/^youtube -s .{1,140}$/i.test(com)) {
+      var query = com.replace(/^youtube -s /i, "");
+      nav("https://www.youtube.com/results?search_query=" + encodeURIComponent(query));
+    }
+    // if anything else, search for it
+    else if (urlPattern.test(com)){
+      nav(com);
+    }
+    // if all else fails, search for it
+    else {
+      search();
+    }
+  }
+
   // handle "ig" command
   else if (com.startsWith("ig")==true) {
     // if "ig" command is matched, open instagram
@@ -140,25 +165,25 @@ function parseCom(com) {
       search();
     }
   }
-  // handle "youtube" and "yt" commands
-  else if (/^youtube$/i.test(com) || /^yt$/i.test(com)) {
-    nav("https://www.youtube.com/feed/subscriptions");
-  }
-  // handle "twitch" and "ttv" commands
-  else if (/^(twitch|ttv)$/i.test(com)) {
-    nav("http://www.twitch.tv/following");
-  }
-  else if (/^(twitch|ttv) -u .[^ ]+$/i.test(com)) {
-    var parts = com.split(" ");
-    nav("http://www.twitch.tv/" + parts.pop());
-  }
-  // if text doesn't match any of the commands...
-  // ... but is a valid URL
-  else if (urlPattern.test(com)) {
-    nav(com);
-  }
-  // ... or should be searched
-  else {
-    search();
+
+  // handle "ttv"" command
+  else if (com.startsWith("twitch")==true) {
+    // if "ttv" command is matched, open twitch
+    if (/^ttv$/i.test(com)) {
+      nav("http://www.twitch.tv/");
+    }
+    // if search command is matched
+    else if (/^ttv -u .[^ ]+$/i.test(com)) {
+      var parts = com.split(" ");
+      nav("http://www.twitch.tv/" + parts.pop());
+    }
+    // if anything else, search for it
+    else if (urlPattern.test(com)){
+      nav(com);
+    }
+    // if all else fails, search for it
+    else {
+      search();
+    }
   }
 }
