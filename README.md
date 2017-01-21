@@ -37,12 +37,14 @@ The following is a list of all commands available for input into the search box,
   - go to [Twitter](https://twitter.com/)
   - `-u` go to specified user (`@` is optional)
   - `-s` search for tweets containing text
+- `youtube [-s]`
+  - go to [YouTube](https://www.youtube.com/) subscriptions page
+  - `-s` search for videos containing text
 - `ig [-u]`
   - go to [Instagram](https://www.instagram.com/)
   - `-u` go to specified user (`@` is optional)
-- `yt` go to [YouTube](https://www.youtube.com/) subscriptions page
 - `ttv [-u]`
-  - go to [Twitch](https://www.twitch.tv/) following directory
+  - go to [Twitch](https://www.twitch.tv/)
   - `-u` go to specified user
 
 ## Usage
