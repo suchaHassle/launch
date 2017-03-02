@@ -33,6 +33,7 @@ function searchKeyPress(e) {
 
 // parse command
 function parseCom(com) {
+  console.log(urlPattern.test(com));
   // handle convenient links
   if (urlPattern.test(com)){
     nav(com);
@@ -55,5 +56,7 @@ function parseCom(com) {
     }
   }
 
-  nav("https://www.google.ca/search?q=" + com);
+  else {
+    nav("https://www.google.ca/search?q=" + com);
+  }
 }
