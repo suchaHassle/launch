@@ -55,7 +55,21 @@ function parseCom(com) {
       nav(com);
     }
   }
-
+  else if (com == "netflix") {
+    nav("https://netflix.com");
+  }
+  else if (com == "music") {
+    nav("https://netflix.com");
+  }
+  else if (com == "fb" || com == "facebook") {
+    nav("https://facebook.com");
+  }
+  else if (com == "inbox") {
+    nav("https://inbox.google.com");
+  }
+  else if (com == "github") {
+    nav("https://github.com");
+  }
   else {
     nav("https://www.google.ca/search?q=" + com);
   }
